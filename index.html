@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/crystal-ball.png" alt="crystal-ball">
+        <h1>Guess My Number!!</h1>
+    </header>
+    <main>
+        <div class="game-rules">
+            <img src="./images/think.png" alt="Rules" class="rules-img">
+            <p class="rules-of-the-game">
+                Your goal is to guess the number the game has in mind. The rules of this game are straightforward.
+                For every number you guess, if you didn't guess the number correctly, you will be told whether your
+                guess is greater than or less than the actual number the game has in mind. With that information,
+                you make another guess to get closer to the answer. You will be given 5 chances.
+            </p>
+        </div>
+        <div class="game-start-div">
+            <div class="range-div">
+                <label for="range">Guess between 1 - 100</label>
+            </div>
+        </div>
+        <div class="game-content">
+            <div class="game-step-1">
+                <h1 class="title-text" id="gameText">Shall We Start?</h1>
+            </div>
+            <div class="game-step-2">
+                <input type="number" class="range-selector" placeholder="Guess My Number!" onmousewheel="return false" required value="100" id="userValue">
+                <p>If you are ready, give the number and hit the Guess button</p>
+            </div>
+            <div class="game-step-3">
+                <input type="button" value="Guess" id="guessButton">
+            </div>
+        </div>
+        <div class="game-history">
+            <div class="history-content">
+                <h1 class="recent-games">Recent Game</h1>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

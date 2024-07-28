@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+    } 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title-text{
+    font-family: "Cinzel", serif;
+    color: #2E236C;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EEEDEB;
+    gap: 15px;
+    color: #2E236C;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF8F3;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-img{
+    height: 256px;
+    width: 256px;
+}
+
+.game-rules{
+    color: #2E236C;
+    padding: 20px;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+.rules-of-the-game{
+    inline-size: 600px;
+    overflow-wrap: break-word;
+}
+
+.game-start-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #2E236C;
+    padding: 20px;
+}
+input{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #2E236C;
+    text-align: center;
+    border: 1px solid #2E236C; 
+    font-size: medium; 
+}
+
+input::placeholder{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #2E236C;
+    text-align: center;
+}
+
+
+.range-selector{
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.range-div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 45px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #2E236C;
+}
+
+.game-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #2E236C;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-step-2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #2E236C;
+}
+
+#guessButton{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #2E236C;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.recent-games{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #2E236C;
+}
+
+.game-history{
+    padding: 10px;
+}
+
+#gameHistory{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    list-style: none;
+}
+
+@media (max-width: 600px){
+    .rules-of-the-game{
+        width: fit-content;
+    }
+    .range-div{
+        font-size: 24px;
+    }
+    .game-content{
+        flex-direction: column;
+    }
+    .game-step-2{
+        flex-direction: column;
+    }
+}
